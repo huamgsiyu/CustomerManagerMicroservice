@@ -1,0 +1,23 @@
+server:
+  port: 8901
+#  servlet:
+#    context-path: /customer-manager/
+spring:
+  application:
+    name: customer-manager
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl #无修改命名
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  path: ./logs/customer-manager
+
+
+
+
+

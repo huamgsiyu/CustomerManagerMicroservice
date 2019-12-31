@@ -1,0 +1,14 @@
+server:
+  port: 8911
+spring:
+  application:
+    name: sync-salesman-information
+  profiles:
+    active: dev
+  devtools:
+    livereload:
+      port: 35730
+
+feign:
+  hystrix:
+    enabled: true
